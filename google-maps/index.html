@@ -23,7 +23,7 @@
     <div class="pac-card" id="pac-card">
       <input id="pac-input" type="text" placeholder="Search location here" />
     </div>
-
+     <p id="demo"></p> 
     <div id="map"></div>
     <div id="infowindow-content">
       <img src="" width="16" height="16" id="place-icon" />
@@ -35,7 +35,8 @@
     </div>
 
     <script src="index.js"></script>
-
+     document.getElementById("demo").innerHTML = 
+     "The full URL of this page is:<br>" + window.location.href
     <!--
       BotStar Webview SDK is required if you want to use BotStarWebview's functions.
       Function onChatBotReady will be called when BotStarWebview is ready to use.
